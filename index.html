@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-right bg-dark">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+          <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">User</a></li>
+              <li class="breadcrumb-item active" aria-current="page">profile</li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 d-md-block d-none">
+              <div class="card bg-common card-left">
+                <div class="card-body">
+                  <nav class="nav flex-column">
+                    <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile"><i class="fas fa-user mr-1"></i> Profile</a>
+                    <a  data-toggle="tab" class="nav-link" href="#parent"><i class="fas fa-home mr-1"></i>  Parent page</a>
+                    <a  data-toggle="tab" class="nav-link" href="#about"><i class="fas fa-user-cog mr-1"></i>  About</a>
+                    <a  data-toggle="tab" class="nav-link" href="#gallery"><i class="fas fa-images mr-1"></i> Gallery</a>
+                    <a  data-toggle="tab" class="nav-link" href="#contact"><i class="fas fa-id-badge mr-1"></i>  Contact</a>
+                    <a  data-toggle="tab" class="nav-link" href="#saintmartin">  Saintmartin</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="card">
+                <div class="card-header border-bottom mb-3 d-md-none">
+                  <ul class="nav nav-tabs card-header-tabs nav-fill">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#profile"><i class="fas fa-user mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#parent"><i class="fas fa-home mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about"><i class="fas fa-user-cog mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#gallery"><i class="fas fa-images mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact"><i class="fas fa-id-badge mr-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#saintmartin">Saint Martin</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body tab-content border-0">
+                  <div class="tab-pane active " id="profile">
+                    <h5>Edit Profile</h5>
+                    <hr width="100px">
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name </label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="n a m e">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email </label>
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com or text">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password </label>
+                        <input type="password" name="email" class="form-control" id="exampleInputPassword1" placeholder="!@passWodr**0110">
+                      </div>
+                      <input type="submit" name="addadmin" class="btn btn-outline-info" value="UPDATE">
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="parent">
+                    <h5>Edit Home</h5>
+                    <hr width="100px">
+                    <h4> Top Head</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="placename" class="form-label">Place Name</label>
+                          <input type="text" name="placename" class="form-control" placeholder="Cox's bazar, saint martin, kuakata" aria-label="placename">
+                        </div>
+                        <div class="col">
+                          <label for="Placelink" class="form-label">Place link</label>
+                          <input type="text" name="placelink" class="form-control" placeholder="https://example.com/saintmartin/" aria-label="Placelink">
+                        </div>
+                        <div class="col">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <input type="number" name="phone" class="form-control" placeholder="+88 012345678910" aria-label="phone">
+                        </div>
+                      </div>
+                    </form>
+                    <h4>Navbar</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <div class="form-file mb-3">
+                        <input type="file" name="logo" class="form-file-input" id="customFile">
+                        <label class="form-file-label" for="customFile">
+                          <span class="form-file-text">Choose file for logo</span>
+                          <span class="form-file-button">Browse</span>
+                        </label>
+                      </div>
+                      <h4>Navbar Body</h4>
+                      <div class="row mb-3">
+                        <div class="col form-file mb-3">
+                          <input type="file" name="logo" class="form-file-input" id="customFile">
+                          <label class="form-file-label" for="customFile">
+                            <span class="form-file-text">Choose Images for carosaul</span>
+                            <span class="form-file-button">Browse</span>
+                          </label>
+                        </div>
+                        <div class="col">
+                          <input type="text" name="image-name" class="form-control" placeholder="Image name" aria-label="image-name">
+                        </div>
+                        <div class="col">
+                          <input type="text" name="image-heading" class="form-control" placeholder="Beautiful place with service" aria-label="image-heading">
+                        </div>
+                      </div>
+                    </form>
+                    <div>
+                      <!--[if lte IE 8]><script>(function(){var e="abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i]);}}());</script><![endif]-->
+                    </div>
+                    <h4>About Section</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <div class="form-file mb-3">
+                        <input type="file" name="about-image" class="form-file-input" id="customFile">
+                        <label class="form-file-label" for="customFile">
+                          <span class="form-file-text">Choose file about-image</span>
+                          <span class="form-file-button">Browse</span>
+                        </label>
+                      </div>
+                      <label for="exampleFormControlTextarea1" class="form-label">Message about owner</label>
+                      <textarea name="authormessage" class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </form>
+                    <h4>Service Section</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <label for="Heading" class="form-label mb-3">Heading</label>
+                      <input type="text" name="heading" class="form-control mb-3" placeholder="Heading" aria-label="Heading">
+                      <label for="exampleFormControlTextarea1" class="form-label mb-3">Details</label>
+                      <textarea name="details" class="form-control mb-3" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </form>
+                    <h4>Travel Section</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <label for="travel-Heading" class="form-label mb-3">Heading</label>
+                      <input type="text" name="travel-heading" class="form-control mb-3" placeholder="travel-Heading" aria-label="Heading">
+                      <div class="form-file mb-3">
+                        <input type="file" name="travel-image" class="form-file-input" id="customFile">
+                        <label class="form-file-label" for="customFile">
+                          <span class="form-file-text">Choose file travel-image</span>
+                          <span class="form-file-button">Browse</span>
+                        </label>
+                      </div>
+                    </form>
+                    <h4>Happy Clients</h4>
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <label for="clients-Heading" class="form-label mb-3">Heading</label>
+                      <input type="text" name="clients-heading" class="form-control mb-3" placeholder="Heading" aria-label="Heading">
+                      <label for="exampleFormControlTextarea1" class="form-label mb-3">Message</label>
+                      <textarea name="clients-message" class="form-control mb-3" id="exampleFormControlTextarea1" rows="2"></textarea>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="clients-checkin" class="form-label mb-3">Checkin Date</label>
+                          <input type="date" name="clients-checkin" class="form-control mb-3" placeholder="Checkin-date" aria-label="Heading">
+                          
+                        </div>
+                        <div class="col">
+                          <label for="clients-checkout" class="form-label mb-3">Chcekout Date</label>
+                          <input type="date" name="clients-checkout" class="form-control mb-3" placeholder="checkout-date" aria-label="Heading">
+                        </div>
+                      </div>
+                      <label for="clients-name" class="form-label mb-3">Signature Name</label>
+                      <input type="text" name="clients-name" class="form-control mb-3" placeholder="Guest Signature Name" aria-label="Heading">
+                    </form>
+                    <h4>Footer</h4>
+                    <form action="" method="post" accept-charset="utf-8">
+                      <div class="form-file mb-3">
+                        <label for="footer-about" class="form-label mb-3">Footer About</label>
+                        <textarea name="footer-message" class="form-control mb-3" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                      <div class="form-file mb-3">
+                        <label for="footer-address" class="form-label mb-3">Footer Address</label>
+                        <textarea name="footer-address" class="form-control mb-3" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="about">
+                    <h5>Edit About</h5>
+                    <hr width="100px">
+                    <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                      <div class="form-file mb-3">
+                        <input type="file" name="logo" class="form-file-input" id="customFile">
+                        <label class="form-file-label" for="customFile">
+                          <span class="form-file-text">Choose file for logo</span>
+                          <span class="form-file-button">Browse</span>
+                        </label>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="heading" class="form-label">Heading</label>
+                          <input type="text" name="heading" class="form-control" placeholder="Heading" aria-label="Heading">
+                        </div>
+                        <div class="col">
+                          <label for="Sub-Heading" class="form-label">Sub-Heading</label>
+                          <input type="text" name="subheading" class="form-control" placeholder="Sub-Heading" aria-label="Sub-Heading">
+                        </div>
+                      </div>
+                      <div class="form-file mb-3">
+                        <input type="file" name="authorimage" class="form-file-input" id="customFile">
+                        <label class="form-file-label" for="customFile">
+                          <span class="form-file-text">Choose file for author image</span>
+                          <span class="form-file-button">Browse</span>
+                        </label>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message From Author</label>
+                        <textarea name="authormessage" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                      <input type="submit" name="addportfolio" class="btn btn-outline-primary" value="Add Author">
+                    </form>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">SL</th>
+                          <th scope="col">Image</th>
+                          <th scope="col">Article</th>
+                          <th scope="col">Edit</th>
+                          <th scope="col">Delete</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-pane" id="gallery">
+                      <h5>Edit Gallery</h5>
+                      <hr width="100px">
+                      <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                        <div class="form-file mb-3">
+                          <input type="file" name="logo" class="form-file-input" id="customFile">
+                          <label class="form-file-label" for="customFile">
+                            <span class="form-file-text">Choose file for logo</span>
+                            <span class="form-file-button">Browse</span>
+                          </label>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col">
+                            <label for="heading" class="form-label">Heading</label>
+                            <input type="text" name="heading" class="form-control" placeholder="Heading" aria-label="Heading">
+                          </div>
+                          <div class="col">
+                            <label for="Sub-Heading" class="form-label">Sub-Heading</label>
+                            <input type="text" name="subheading" class="form-control" placeholder="Sub-Heading" aria-label="Sub-Heading">
+                          </div>
+                        </div>
+                        <div class="form-file mb-3">
+                          <input type="file" name="authorimage" class="form-file-input" id="customFile">
+                          <label class="form-file-label" for="customFile">
+                            <span class="form-file-text">Choose file for gallery</span>
+                            <span class="form-file-button">Browse</span>
+                          </label>
+                        </div>
+                        <input type="submit" name="addimage" class="btn btn-outline-primary" value="Add IMAGE">
+                      </form>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">SL</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="tab-pane" id="contact">
+                        <h5>Edit Contact</h5>
+                        <hr width="100px">
+                        <form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                          <div class="form-file mb-3">
+                            <input type="file" name="logo" class="form-file-input" id="customFile">
+                            <label class="form-file-label" for="customFile">
+                              <span class="form-file-text">Choose file for logo</span>
+                              <span class="form-file-button">Browse</span>
+                            </label>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="heading" class="form-label">Heading</label>
+                              <input type="text" name="heading" class="form-control" placeholder="Heading" aria-label="Heading">
+                            </div>
+                            <div class="col">
+                              <label for="Sub-Heading" class="form-label">Sub-Heading</label>
+                              <input type="text" name="subheading" class="form-control" placeholder="Sub-Heading" aria-label="Sub-Heading">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="facebooklink" class="form-label">Facebook link url</label>
+                              <input type="text" name="facebook" class="form-control" placeholder="https://facebook.com/users/" aria-label="facebook">
+                            </div>
+                            <div class="col">
+                              <label for="Instagramlink" class="form-label">Instagram Link url</label>
+                              <input type="text" name="instagram" class="form-control" placeholder="https://instagram.com/users/" aria-label="Instagram">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="youtubelink" class="form-label">Youtube link url</label>
+                              <input type="text" name="youtube" class="form-control" placeholder="https://youtube.com/users/" aria-label="youtubelink">
+                            </div>
+                            <div class="col">
+                              <label for="youtubelink" class="form-label">Twitter link url</label>
+                              <input type="text" name="twitter" class="form-control" placeholder="https://twitter.com/users/" aria-label="twitterlink">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="youtubelink" class="form-label">Location Map link url</label>
+                              <input type="text" name="map" class="form-control" placeholder="https://googlemap.com/location/" aria-label="youtubelink">
+                            </div>
+                          </div>
+                        </form>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">SL</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Message</th>
+                              <th scope="col">Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="tab-pane" id="saintmartin">
+                          <h5>Edit Saintmartin</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Optional JavaScript; choose one of the two! -->
+          <!-- Option 1: Bootstrap Bundle with Popper.js -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+        </body>
+      </html>
