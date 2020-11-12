@@ -19,6 +19,7 @@
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">User</a></li>
               <li class="breadcrumb-item active" aria-current="page">profile</li>
+              <li class="breadcrumb-item"><a href="logout.php" style="text-decoration: none; color: red;">Logout</a></li>
             </ol>
           </nav>
           <div class="row">
@@ -32,6 +33,7 @@
                     <a  data-toggle="tab" class="nav-link" href="#gallery"><i class="fas fa-images mr-1"></i> Gallery</a>
                     <a  data-toggle="tab" class="nav-link" href="#contact"><i class="fas fa-id-badge mr-1"></i>  Contact</a>
                     <a  data-toggle="tab" class="nav-link" href="#saintmartin">  Saintmartin</a>
+                    <a  data-toggle="tab" class="nav-link" href="#avaibility">  Avaibility</a>
                   </nav>
                 </div>
               </div>
@@ -41,22 +43,25 @@
                 <div class="card-header border-bottom mb-3 d-md-none">
                   <ul class="nav nav-tabs card-header-tabs nav-fill">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#profile"><i class="fas fa-user mr-1"></i></a>
+                      <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile"><i class="fas fa-user mr-1"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#parent"><i class="fas fa-home mr-1"></i></a>
+                      <a data-toggle="tab" class="nav-link" href="#parent"><i class="fas fa-home mr-1"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#about"><i class="fas fa-user-cog mr-1"></i></a>
+                      <a data-toggle="tab" class="nav-link" href="#about"><i class="fas fa-user-cog mr-1"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#gallery"><i class="fas fa-images mr-1"></i></a>
+                      <a data-toggle="tab" class="nav-link" href="#gallery"><i class="fas fa-images mr-1"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#contact"><i class="fas fa-id-badge mr-1"></i></a>
+                      <a data-toggle="tab" class="nav-link" href="#contact"><i class="fas fa-id-badge mr-1"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#saintmartin">Saint Martin</a>
+                      <a data-toggle="tab" class="nav-link" href="#saintmartin">Saint Martin</a>
+                    </li>
+                    <li class="nav-item">
+                      <a  data-toggle="tab" class="nav-link" href="#avaibility">Avaibility</a>
                     </li>
                   </ul>
                 </div>
@@ -226,26 +231,28 @@
                       </div>
                       <input type="submit" name="addportfolio" class="btn btn-outline-primary" value="Add Author">
                     </form>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">SL</th>
-                          <th scope="col">Image</th>
-                          <th scope="col">Article</th>
-                          <th scope="col">Edit</th>
-                          <th scope="col">Delete</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                        </tbody>
-                      </table>
+                    <div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">SL</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Article</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                     <div class="tab-pane" id="gallery">
                       <h5>Edit Gallery</h5>
@@ -277,25 +284,28 @@
                         </div>
                         <input type="submit" name="addimage" class="btn btn-outline-primary" value="Add IMAGE">
                       </form>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">SL</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                          </tbody>
-                        </table>
+                      <div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+                        
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">SL</th>
+                              <th scope="col">Image</th>
+                              <th scope="col">Edit</th>
+                              <th scope="col">Delete</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                       <div class="tab-pane" id="contact">
                         <h5>Edit Contact</h5>
@@ -345,29 +355,45 @@
                             </div>
                           </div>
                         </form>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">SL</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Email</th>
-                              <th scope="col">Message</th>
-                              <th scope="col">Date</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                            </tr>
-                            <tr>
-                            </tbody>
-                          </table>
+                        <div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">SL</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                         <div class="tab-pane" id="saintmartin">
                           <h5>Edit Saintmartin</h5>
+                        </div>
+                        <div class="tab-pane" id="avaibility">
+                          <h5>Give seat avaibility message</h5>
+                          <form action="" method="post" accept-charset="utf-8">
+                            <div class="mb-3">
+                              <div class="row mb-3">
+                                <div class="col">
+                                  <label for="youtubelink" class="form-label">Message</label>
+                                  <input type="text" name="message" class="form-control" value="" placeholder="Give seat avaibility message" aria-label="">
+                                </div>
+                              </div>
+                              <input type="submit" name="seatmessage" class="btn btn-outline-dark" value="UPDATE">
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -375,9 +401,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Optional JavaScript; choose one of the two! -->
-          <!-- Option 1: Bootstrap Bundle with Popper.js -->
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-        </body>
-      </html>
+            <!-- Optional JavaScript; choose one of the two! -->
+            <!-- Option 1: Bootstrap Bundle with Popper.js -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+          </body>
+        </html>
